@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-final class MainView: UIViewController, SearchViewModelDelegate {
+final class MainViewController: UIViewController, SearchViewModelDelegate {
     func getSearchResults() {
        reloadTableView()
     }
@@ -65,7 +65,7 @@ final class MainView: UIViewController, SearchViewModelDelegate {
     }
 }
 
-extension MainView: UITableViewDelegate {
+extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
@@ -85,7 +85,7 @@ extension MainView: UITableViewDelegate {
     }
 }
 
-extension MainView: UITableViewDataSource {
+extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         searchViewModel.results.count
     }
@@ -98,7 +98,7 @@ extension MainView: UITableViewDataSource {
     }
 }
 
-extension MainView: UISearchBarDelegate {
+extension MainViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.count >= 3 {
             currentQuery = searchText

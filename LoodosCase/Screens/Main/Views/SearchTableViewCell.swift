@@ -16,7 +16,7 @@ final class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var typeLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        movieImageView.layer.cornerRadius = 8
+        movieImageView.layer.cornerRadius = 6
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
