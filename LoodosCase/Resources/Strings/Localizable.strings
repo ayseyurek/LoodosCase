@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  LoodosCase
+
+  Created by Ayşe YÜREK on 2.04.2022.
+  
+*/
+
+"general.ok" = "Ok";
+
+"splash.alertError" = "Error";
+"splash.networkErrorTitle" = "Network Error";
+"splash.networkErrorMessage" = "No internet connection";
+
+"search.placeholder" = "Search by title";
+"search.emptyCollectionView" = "Nothing to show :(";
+
+"detail.genre" = "Genre";
+"detail.writer" = "Writer";
+"detail.actors" = "Actors";
+"detail.language" = "Language";
+"detail.awards" = "Awards";
