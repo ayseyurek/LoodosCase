@@ -9,9 +9,7 @@ import UIKit
 import Lottie
 
 final class MainViewController: UIViewController, SearchViewModelDelegate {
-    func getSearchResults() {
-       reloadTableView()
-    }
+  
     private var currentPage = 1
     private var currentQuery = ""
     private let searchViewModel = SearchViewModel()
@@ -33,6 +31,9 @@ final class MainViewController: UIViewController, SearchViewModelDelegate {
             self.configureTableView()
             self.prepareNavigationBar()
         }
+    }
+    func getSearchResults() {
+       reloadTableView()
     }
     
     private func configureTableView(){
@@ -71,7 +72,7 @@ extension MainViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let detailVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "MovieDetailView") as? MovieDetailView else {return}
+        guard let detailVC = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "MovieDetailViewController") as? MovieDetailViewController else {return}
         detailVC.imdbID = searchViewModel.results[indexPath.row].imdbId
         
         navigationController?.pushViewController(detailVC, animated: true)

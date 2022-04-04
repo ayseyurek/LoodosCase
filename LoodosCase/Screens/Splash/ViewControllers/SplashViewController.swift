@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-final class SplashView: UIViewController {
+final class SplashViewController: UIViewController {
 
     private let alertController = UIAlertController(title: "Error"
                                             , message: "You don't have any network connection please check your network connection before go on"

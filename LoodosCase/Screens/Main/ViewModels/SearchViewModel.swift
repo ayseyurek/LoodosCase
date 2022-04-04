@@ -8,7 +8,6 @@
 import Foundation
 
 
-
 class SearchViewModel {
     
     var results = [SearchResult]()

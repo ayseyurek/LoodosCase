@@ -8,7 +8,7 @@
 import Foundation
 
 enum StoryboardIdentifiers: String {
-    case searchViewController = "SearchViewController"
+    case searchViewController = "MainViewController"
     case splashViewController = "SplashViewController"
-    case detailViewController = "DetailViewController"
+    case detailViewController = "MovieDetailViewController"
 }

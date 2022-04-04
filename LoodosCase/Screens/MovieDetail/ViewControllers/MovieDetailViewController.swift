@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 import Firebase
 
-final class MovieDetailView: UIViewController, MovieDetailViewModelDelegate {
+final class MovieDetailViewController: UIViewController, MovieDetailViewModelDelegate {
     
     // Constants
     @IBOutlet weak var movieImageView: UIImageView!
