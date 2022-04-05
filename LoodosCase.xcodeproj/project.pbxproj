@@ -11,7 +11,6 @@
 		40415CB227F8380D00AF5FCA /* StoryboardIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40415CB127F8380D00AF5FCA /* StoryboardIdentifiers.swift */; };
 		40415CE427F8392300AF5FCA /* MovieDetailViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40415CE327F8392300AF5FCA /* MovieDetailViewModelDelegate.swift */; };
 		40415CE627F83CDB00AF5FCA /* SearchViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40415CE527F83CDB00AF5FCA /* SearchViewModelDelegate.swift */; };
-		40415CE827F83EB600AF5FCA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40415CE727F83EB600AF5FCA /* Localizable.strings */; };
 		B910334A26D134BB002E4F30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910334926D134BB002E4F30 /* AppDelegate.swift */; };
 		B910334C26D134BB002E4F30 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910334B26D134BB002E4F30 /* SceneDelegate.swift */; };
 		B910334E26D134BB002E4F30 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B910334D26D134BB002E4F30 /* MainViewController.swift */; };
@@ -40,7 +39,6 @@
 		40415CB127F8380D00AF5FCA /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiers.swift; sourceTree = "<group>"; };
 		40415CE327F8392300AF5FCA /* MovieDetailViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModelDelegate.swift; sourceTree = "<group>"; };
 		40415CE527F83CDB00AF5FCA /* SearchViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelDelegate.swift; sourceTree = "<group>"; };
-		40415CE727F83EB600AF5FCA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		41BEAC3632D10CBA46C64F5A /* libPods-LoodosCase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LoodosCase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9248956AD148C872B916A060 /* Pods-LoodosCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoodosCase.release.xcconfig"; path = "Target Support Files/Pods-LoodosCase/Pods-LoodosCase.release.xcconfig"; sourceTree = "<group>"; };
 		B910334626D134BB002E4F30 /* LoodosCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoodosCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,7 +143,6 @@
 		40415C7D27F82F7F00AF5FCA /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				40415CE727F83EB600AF5FCA /* Localizable.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -176,10 +173,7 @@
 		40596DBA27FAC9C3000881D5 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				40596DC327FACA53000881D5 /* Views */,
-				40596DC227FACA4C000881D5 /* ViewModels */,
 				40596DC127FACA44000881D5 /* ViewControllers */,
-				40596DC027FACA3C000881D5 /* Protocols */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -191,7 +185,6 @@
 				40596DBC27FACA00000881D5 /* Protocols */,
 				40596DBD27FACA0A000881D5 /* ViewControllers */,
 				40596DBE27FACA17000881D5 /* ViewModels */,
-				40596DBF27FACA2F000881D5 /* Views */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -220,40 +213,12 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		40596DBF27FACA2F000881D5 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		40596DC027FACA3C000881D5 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		40596DC127FACA44000881D5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				B910335D26D13617002E4F30 /* SplashView.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		40596DC227FACA4C000881D5 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		40596DC327FACA53000881D5 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		40596DC427FACA5B000881D5 /* Views */ = {
@@ -417,7 +382,6 @@
 				B910335626D134BC002E4F30 /* LaunchScreen.storyboard in Resources */,
 				B910336026D13745002E4F30 /* GoogleService-Info.plist in Resources */,
 				B910335326D134BC002E4F30 /* Assets.xcassets in Resources */,
-				40415CE827F83EB600AF5FCA /* Localizable.strings in Resources */,
 				B910335126D134BB002E4F30 /* Main.storyboard in Resources */,
 				B9FE65CB26D313E300666EBD /* movieLoading.json in Resources */,
 				B91BF73426D2961C00AE9FAB /* SearchTableViewCell.xib in Resources */,
